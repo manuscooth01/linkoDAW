@@ -7,7 +7,7 @@ import javax.inject.Inject
 
 /* Implementación del repositorio para grabación de audio.
    Coordina entre fuentes de datos locales y remotas, aplicando Clean Architecture. */
-class AudioRecordingRepository @Inject constructor(
+class AudioRecordingRepositoryImpl @Inject constructor(
     private val saveRecordingUseCase: SaveRecordingUseCase,
     private val audioRemoteDataSource: AudioRemoteDataSource
 ) : AudioRecordingRepository {

@@ -2,23 +2,26 @@ package com.linkodaw.di
 
 import com.linkodaw.domain.AudioRecordingRepository
 import com.linkodaw.data.AudioRecordingRepositoryImpl
+import com.linkodaw.data.AudioRemoteDataSource
 import com.linkodaw.data.AudioRemoteDataSourceImpl
+import com.linkodaw.domain.usecase.SaveRecordingUseCase
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.SingletonComponent
 import javax.inject.Singleton
 
-/* Módulo Hilt para proveer dependencias a toda la aplicación.
-   Configura las implementaciones concretas de los casos de uso y repositorios. */
-@Module(includes = [::class])
+@Module
+@InstallIn(SingletonComponent::class)
 object InjectionProvider {
 
     @Provides
     @Singleton
     fun provideAudioRecordingRepository(
-        @SaveRecordingUseCase saves: SaveRecordingUseCase,
+        saves: SaveRecordingUseCase,
         remote: AudioRemoteDataSource
     ): AudioRecordingRepository {
-        return AudioRecordingRepository(saveRecordingUseCase = saves, audioRemoteDataSource = remote)
+        return AudioRecordingRepositoryImpl(saveRecordingUseCase = saves, audioRemoteDataSource = remote)
     }
 
     @Provides
