@@ -99,3 +99,7 @@ dependencies {
     androidTestImplementation 'com.google.dagger:hilt-android-testing:2.51.1'
     kaptAndroidTest 'com.google.dagger:hilt-compiler:2.51.1'
 }
+
+kapt {
+    correctErrorTypes = true
+}

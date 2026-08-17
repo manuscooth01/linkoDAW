@@ -6,15 +6,16 @@ linkoDAW es una aplicación de estudio de audio digital (DAW) para Android, simi
 
 ## Stack Tecnológico
 
-- **Lenguaje**: Kotlin 1.8.10
+- **Lenguaje**: Kotlin 1.9.10
 - **Min SDK**: 21 (Android 5.0)
-- **Target SDK**: 33 (Android 13)
-- **Compile SDK**: 33
+- **Target SDK**: 34 (Android 14)
+- **Compile SDK**: 34
 - **Arquitectura**: Clean Architecture + MVVM
 - **DI**: Hilt 2.48
 - **Async**: Coroutines + Flow
-- **UI**: ViewBinding + Material 3
+- **UI**: ViewBinding + DataBinding + Material 3
 - **Testing**: JUnit 4, Mockito, Espresso
+- **Gradle**: 8.2, AGP 8.1.4
 
 ## Estructura del Proyecto
 
