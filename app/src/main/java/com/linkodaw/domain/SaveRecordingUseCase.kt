@@ -1,7 +1,8 @@
 package com.linkodaw.domain
 
-import com.linkodaw.data.AudioRecording
-import kotlinx.coroutines.flow MutableStateFlow
+import com.linkodaw.domain.AudioRecording
+import com.linkodaw.domain.RecordingStatus
+import kotlinx.coroutines.flow.MutableStateFlow
 import javax.inject.Inject
 
 /* Caso de uso para guardar una grabación de audio.

@@ -126,11 +126,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private val tracksAdapter = TracksAdapter { track ->
-        viewModel.playTrack(track)
-    } onDeleteClick = { track ->
-        viewModel.deleteTrack(track)
-    }
+    private val tracksAdapter = TracksAdapter(
+        onTrackClick = { track -> viewModel.playTrack(track) },
+        onDeleteClick = { track -> viewModel.deleteTrack(track) }
+    )
 
     private fun observeState() {
         lifecycleScope.launch {
