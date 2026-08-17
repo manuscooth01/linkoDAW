@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Microphone icon for DAW app -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20c-7.2,0-13,5.8-13,13v27c0,7.2,5.8,13,13,13s13-5.8,13-13V33C67,25.8,61.2,20,54,20zM54,18c8.8,0,16,7.2,16,16v27c0,8.8-7.2,16-16,16S38,74.8,38,66V34C38,25.2,45.2,18,54,18z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,70c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S58.4,70,54,70z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,86c-6.6,0-12-5.4-12-12v-4h24v4C66,80.6,60.6,86,54,86z"/>
+</vector>

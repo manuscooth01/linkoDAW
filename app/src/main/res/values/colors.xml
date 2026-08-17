@@ -4,4 +4,5 @@
     <color name="pause_orange">#FB8C00</color>
     <color name="stop_gray">#757575</color>
     <color name="play_green">#43A047</color>
+    <color name="ic_launcher_background">#6200EE</color>
 </resources>
