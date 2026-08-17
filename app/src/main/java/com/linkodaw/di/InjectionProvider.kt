@@ -8,7 +8,7 @@ import com.linkodaw.domain.usecase.SaveRecordingUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.SingletonComponent
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
