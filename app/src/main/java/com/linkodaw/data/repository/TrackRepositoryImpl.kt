@@ -3,14 +3,16 @@ package com.linkodaw.data.repository
 import android.content.Context
 import com.linkodaw.domain.model.Track
 import com.linkodaw.domain.repository.TrackRepository
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.withContext
 import java.io.File
+import javax.inject.Inject
 
 class TrackRepositoryImpl @Inject constructor(
-    private val context: Context
+    @ApplicationContext private val context: Context
 ) : TrackRepository {
 
     private val tracksDir = File(context.filesDir, "tracks").apply { mkdirs() }
