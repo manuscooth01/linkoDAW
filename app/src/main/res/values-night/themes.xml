@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LinKoDAW" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/record_red</item>
+        <item name="colorPrimaryContainer">@color/record_red</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/pause_orange</item>
+        <item name="colorSecondaryContainer">@color/pause_orange</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorTertiary">@color/play_green</item>
+        <item name="colorTertiaryContainer">@color/play_green</item>
+        <item name="colorOnTertiary">@android:color/white</item>
+        <item name="colorError">@color/record_red</item>
+        <item name="colorSurface">@color/design_default_color_background</item>
+        <item name="colorOnSurface">@color/design_default_color_on_background</item>
+    </style>
+
+    <style name="Theme.LinKoDAW.NoActionBar" parent="Theme.LinKoDAW">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

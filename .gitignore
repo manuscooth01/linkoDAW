@@ -1,0 +1,44 @@
+# Gradle
+.gradle/
+build/
+local.properties
+.gradle/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+*.idea/
+.gradle/
+*.classpath
+*.project
+.settings/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+
+# Generated files
+generated/
+out/
+production/
+
+# Hilt
+app/build/generated/source/kapt/
+
+# Logs
+*.log
+
+# Android Studio
+captures/
+*.hprof

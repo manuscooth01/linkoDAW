@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">linkoDAW</string>
+    <string name="app_description">DAW gratuito para Android</string>
+    <string name="record">Grabar</string>
+    <string name="play">Reproducir</string>
+    <string name="pause">Pausar</string>
+    <string name="stop">Detener</string>
+    <string name="tracks">Pistas grabadas</string>
+    <string name="no_tracks">No hay pistas grabadas aún</string>
+    <string name="recording">Grabando...</string>
+    <string name="playing">Reproduciendo...</string>
+    <string name="paused">Pausado</string>
+    <string name="idle">Listo</string>
+    <string name="permission_microphone">Se necesita permiso de micrófono para grabar audio</string>
+    <string name="permission_storage">Se necesita permiso de almacenamiento para guardar grabaciones</string>
+</resources>
