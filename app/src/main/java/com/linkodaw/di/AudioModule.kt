@@ -1,24 +1,26 @@
 package com.linkodaw.di
 
-import com.linkodaw.data.audio.AudioRecorderImpl
-import com.linkodaw.data.audio.AudioPlayerImpl
-import com.linkodaw.domain.usecase.AudioRecorder
-import com.linkodaw.domain.usecase.AudioPlayer
+import android.content.Context
+import androidx.lifecycle.ViewModelProvider
+import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityRetainedComponent
 import dagger.hilt.android.components.SingletonComponent
+import dagger.hilt.android.scopes.ActivityRetainedScoped
 import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ActivityRetainedComponent::class)
 abstract class AudioModule {
 
     @Binds
-    @Singleton
+    @ActivityRetainedScoped
     abstract fun bindAudioRecorder(impl: AudioRecorderImpl): AudioRecorder
 
     @Binds
-    @Singleton
+    @ActivityRetainedScoped
     abstract fun bindAudioPlayer(impl: AudioPlayerImpl): AudioPlayer
 }
 
