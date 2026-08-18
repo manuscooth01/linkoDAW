@@ -10,24 +10,23 @@ import com.linkodaw.domain.usecase.PlayAudioUseCase
 import com.linkodaw.domain.usecase.RecordAudioUseCase
 import com.linkodaw.domain.usecase.SaveTrackUseCase
 import com.linkodaw.domain.usecase.StopAudioUseCase
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.SingletonComponent
+import dagger.hilt.android.components.ActivityRetainedComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent::class)
+@InstallIn(ActivityRetainedComponent::class)
 object UseCaseModule {
 
-    @Binds
+    @Provides
     @Singleton
-    abstract fun bindAudioRecorder(impl: AudioRecorderImpl): AudioRecorder
+    fun provideAudioRecorder(): AudioRecorder = AudioRecorderImpl(AudioRecordConfig())
 
-    @Binds
+    @Provides
     @Singleton
-    abstract fun bindAudioPlayer(impl: AudioPlayerImpl): AudioPlayer
+    fun provideAudioPlayer(): AudioPlayer = AudioPlayerImpl(AudioTrackConfig())
 
     @Provides
     @Singleton
